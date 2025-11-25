@@ -3,8 +3,8 @@ import mysql.connector
 # Conectar ao banco de dados
 conn = mysql.connector.connect(
     host='localhost',
-    user='user_trab',
-    password='it5752025',
+    user='*****',
+    password='*****',
     database='cadastro_imobiliario_it575'
 )
 cursor = conn.cursor()
@@ -72,4 +72,5 @@ for id_estado, sigla, nome in resultados:
     print(f"  {id_estado};{sigla};{nome}")
 
 cursor.close()
+
 conn.close()
