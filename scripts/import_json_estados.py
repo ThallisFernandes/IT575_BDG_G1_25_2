@@ -6,8 +6,8 @@ import os
 # Conectar ao banco de dados
 conn = mysql.connector.connect(
     host='localhost',
-    user='user_trab',
-    password='it5752025',
+    user='*****',
+    password='*****',
     database='cadastro_imobiliario_it575'
 )
 cursor = conn.cursor()
@@ -134,4 +134,5 @@ total = cursor.fetchone()[0]
 print(f"\n>>>> Processamento concluído! {total} estados inseridos no banco.")
 
 cursor.close()
+
 conn.close()
